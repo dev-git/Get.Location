@@ -94,7 +94,7 @@ namespace GetLocation
 
             using (var client = new HttpClient())
             {
-                //var content = new FormUrlEncodedContent(values);
+                // var content = new FormUrlEncodedContent(values);
                 var content = new StringContent(macAddress);
                 var url = String.Format("http://ibrium.webhop.me/plog/api/pLog/{0}/{1}/{2}/{3}", macAddress, latitude, longitude, batteryLevel);
 
